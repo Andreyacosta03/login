@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url(fondo_Sesion.jpg);
+            background-image: url(/HTML/fondo_Sesion.jpg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -66,6 +66,16 @@
         input[type="password"]:focus {
             border-bottom-color: rgba(255, 255, 255, 0.8);
             outline: none;
+        }
+
+        /* Estilos para el autocompletado */
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: white !important;
+            background: transparent !important;
         }
 
         button {
